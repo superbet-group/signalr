@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/philippseith/signalr"
+	"github.com/superbet-group/signalr"
 )
 
 func TestMain(m *testing.M) {

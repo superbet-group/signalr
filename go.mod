@@ -9,7 +9,6 @@ require (
 	github.com/google/uuid v1.3.1
 	github.com/onsi/ginkgo v1.16.5
 	github.com/onsi/gomega v1.28.0
-	github.com/philippseith/signalr v0.6.3
 	github.com/stretchr/testify v1.8.4
 	github.com/teivah/onecontext v1.3.0
 	github.com/vmihailenco/msgpack/v5 v5.4.0

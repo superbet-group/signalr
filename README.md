@@ -1,8 +1,8 @@
 # SignalR
 
-[![Actions Status](https://github.com/philippseith/signalr/workflows/Build%20and%20Test/badge.svg)](https://github.com/philippseith/signalr/actions)
-[![codecov](https://codecov.io/gh/philippseith/signalr/branch/master/graph/badge.svg)](https://codecov.io/gh/philippseith/signalr)
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/philippseith/signalr)](https://pkg.go.dev/github.com/philippseith/signalr)
+[![Actions Status](https://github.com/superbet-group/signalr/workflows/Build%20and%20Test/badge.svg)](https://github.com/superbet-group/signalr/actions)
+[![codecov](https://codecov.io/gh/superbet-group/signalr/branch/master/graph/badge.svg)](https://codecov.io/gh/superbet-group/signalr)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/superbet-group/signalr)](https://pkg.go.dev/github.com/superbet-group/signalr)
 
 SignalR is an open-source library that simplifies adding real-time web functionality to apps. 
 Real-time web functionality enables server-side code to push content to clients instantly.
@@ -31,7 +31,7 @@ Protocol encoding in JSON and MessagePack is fully supported.
 With a [correctly configured](https://golang.org/doc/install#testing) Go toolchain:
 
 ```sh
-go get -u github.com/philippseith/signalr
+go get -u github.com/superbet-group/signalr
 ```
 
 ## Getting Started
@@ -47,7 +47,7 @@ The easiest way to implement the `signalr.HubInterface` in your project is to de
 ```go
 package main
 
-import "github.com/philippseith/signalr"
+import "github.com/superbet-group/signalr"
 
 type AppHub struct {
     signalr.Hub
@@ -87,7 +87,7 @@ func (c *chat) OnDisconnected(connectionID string) {
 import (
     "net/http"
 	
-    "github.com/philippseith/signalr"
+    "github.com/superbet-group/signalr"
 )
 
 func runHTTPServer() {
@@ -142,7 +142,7 @@ You can install `@microsoft/signalr` through any node package manager:
 | [npm](https://www.npmjs.com/) | `npm install @microsoft/signalr@latest` |
 | [yarn](https://yarnpkg.com/) | `yarn add @microsoft/signalr@latest` |
 | [LibMan](https://docs.microsoft.com/en-us/aspnet/core/client-side/libman/libman-cli)| `libman install @microsoft/signalr@latest -p unpkg -d wwwroot/js/signalr --files dist/browser/signalr.js --files dist/browser/signalr.min.js --files dist/browser/signalr.map.js` |
-| none | you can download the version we are using in our `chatsample` from [here](https://raw.githubusercontent.com/philippseith/signalr/master/chatsample/public/js/signalr.js) (the minified version is [here](https://raw.githubusercontent.com/philippseith/signalr/master/chatsample/public/js/signalr.min.js))|
+| none | you can download the version we are using in our `chatsample` from [here](https://raw.githubusercontent.com/superbet-group/signalr/master/chatsample/public/js/signalr.js) (the minified version is [here](https://raw.githubusercontent.com/superbet-group/signalr/master/chatsample/public/js/signalr.min.js))|
 
 #### Use a HubConnection to connect to your server Hub
 
