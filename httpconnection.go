@@ -83,6 +83,12 @@ func NewHTTPConnection(ctx context.Context, address string, options ...func(*htt
 
 	negotiateURL := *reqURL
 	negotiateURL.Path = path.Join(negotiateURL.Path, "negotiate")
+
+	// set negotiate version
+	nq := negotiateURL.Query()
+	nq.Set("negotiateVersion", "1")
+	negotiateURL.RawQuery = nq.Encode()
+
 	req, err := http.NewRequestWithContext(ctx, "POST", negotiateURL.String(), nil)
 	if err != nil {
 		return nil, err
@@ -113,7 +119,9 @@ func NewHTTPConnection(ctx context.Context, address string, options ...func(*htt
 	}
 
 	q := reqURL.Query()
-	q.Set("id", negotiateResponse.ConnectionID)
+	//q.Set("id", negotiateResponse.ConnectionID)
+	// get connection token
+	q.Set("id", negotiateResponse.ConnectionToken)
 	reqURL.RawQuery = q.Encode()
 
 	// Select the best connection
