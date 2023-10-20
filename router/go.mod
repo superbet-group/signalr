@@ -1,4 +1,4 @@
-module github.com/philippseith/signalr/router
+module github.com/superbet-group/signalr/router
 
 go 1.17
 
@@ -9,7 +9,7 @@ require (
 	github.com/julienschmidt/httprouter v1.3.0
 	github.com/onsi/ginkgo v1.12.1
 	github.com/onsi/gomega v1.11.0
-	github.com/philippseith/signalr v0.4.2-0.20211029170321-9b04bbc12782
+	github.com/superbet-group/signalr v0.4.2-0.20211029170321-9b04bbc12782
 )
 
 require (
